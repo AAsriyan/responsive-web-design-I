@@ -63,24 +63,111 @@ header {
     margin-bottom: 50px;
 }
 
-/* @media (max-width: 2000px) {
-    .header {
+/* @media (max-width: 1024px) {
+    header {
         display: flex;
         justify-content: space-evenly;
     }
-} */
+} 
+
+@media (max-width: 800px) {
+    header {
+        display: flex;
+        justify-content: 
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        display: flex;
+        justify-content: 
+    }
+}
+
+*/
 
 nav {
     display: flex;
-    justify-content: space-between;
-    width: 600px;
+    justify-content: space-around;
+    width: 100%;
     align-items: center;
-    
 }
 
 nav a {
     text-decoration-line: none;
     color: gray;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .logo {
+        text-align: center;
+        position: relative;
+        top: 10px;
+        left: 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        max-width: 100%;
+        align-items: center;
+        position: relative;
+        top: 100px;
+        left: 0;
+    }
+
+    header {
+        display: block;
+        margin: 0 auto;
+    }
+
+    h1 {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .top-img {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        max-width: 100%;
+    }
+
+    nav {
+        display: block;
+    }
+
+    header {
+        max-width: 100%;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        font-size: 25px;
+        margin: 20px 0 0px 0;
+        padding-bottom: 20px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+    }
+
+    .logo {
+        align-self: 
+    }
 }
 
 .top-content {
@@ -91,6 +178,15 @@ nav a {
     padding-bottom: 30px;
 }
 
+
+@media (max-width: 800px) {
+    .top-content {
+        margin-bottom: 20px;
+        padding-bottom: 30px;
+        width: 100%;
+    }
+}
+
 h1 {
     font-size: 60px;
     font-weight: bold;
@@ -99,16 +195,29 @@ h1 {
     text-align: center;
 }
 
+@media (max-width: 500px) {
+    h1 {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+}
+
 .innovation-and-button {
-    margin: 60px auto;
+    margin: 100px 80px 60px 0px;
+}
+
+@media (max-width: 800px) {
+    .innovation-and-button {
+        margin: 100px 80px 60px 60px;
+    }
 }
 
 button {
     border: 1px solid black;
     width: 200px;
-    height: 30px;
+    height: 35px;
     font-size: 15px;
-    margin-left: 90px;
+    margin: 10px 0 0 90px;
 }
 
 button:hover {
@@ -137,10 +246,49 @@ h2 {
     padding-bottom: 30px;
 }
 
+@media (max-width: 800px) {
+    .features {
+        width: 100%;
+    }
+
+    .about {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .top-paragraphs {
+        display: block;
+    }
+
+    .features {
+        width: 100%;
+        margin: 40px 50px 40px 10px;
+    }
+
+    .about {
+        width: 100%;
+        margin: 40px 50px 40px 10px;
+    }
+}
+
 .middle-img {
-    width: 80px;
     margin-bottom: 30px;
 }
+
+@media (max-width: 800px) {
+    .middle-img img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .middle-img img {
+        width: 100%;
+        margin: 0 10px 
+    }
+}
+
 
 .bottom-paragraphs {
     width: 875px;
@@ -149,17 +297,60 @@ h2 {
 
 }
 
+@media (max-width: 800px) {
+    .bottom-paragraphs {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .bottom-paragraphs {
+        display: block;
+        width: 100%;
+    }
+}
+
 .services .product .vision {
     width: 250px;
 }
 
+@media (max-width: 500px) {
+    .services {
+        width: 100%;
+        margin: 40px 50px 40px 10px;
+    }
+
+    .product {
+        width: 100%;
+        margin: 40px 50px 40px 10px;
+    }
+
+    .vision {
+        width: 100%;
+        margin: 40px 50px 40px 10px;
+    }
+}
+
 .bottom-content {
     margin-top: 30px;
+}
 
+@media (max-width: 500px) {
+    .bottom-content {
+        width: 100%;
+        margin: 40px 50px 40px 10px;
+    }
 }
 
 footer {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+}
+
+@media (max-width: 500px) {
+    footer {
+        width: 100%;
+        margin: 0px 50px 40px 10px;
+    }
 }
