@@ -1,3 +1,350 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 875px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+nav a {
+    text-decoration-line: none;
+    color: gray;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .logo {
+        text-align: center;
+        position: relative;
+        top: 10px;
+        left: 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        max-width: 100%;
+        align-items: center;
+        position: relative;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+        height: 80px;
+
+    }
+
+    h1 {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .top-img {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        max-width: 100%;
+    }
+
+    nav {
+        display: block;
+        width: 100%;
+    }
+
+    header {
+        align-items: center;
+        display: flex;
+        width: 100%;
+        margin-bottom: 0;
+        height: 450px;
+
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        font-size: 25px;
+        margin: 20px 0 0px 0;
+        padding-bottom: 20px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+    }
+
+    .logo {
+        width: 100%;
+        margin-bottom: 10px;
+        height: 50px;
+        border-bottom: 1px solid gray;
+    }
+}
+
+/* Top content CSS for index.html */
+
+.top-content {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
 
 
+@media (max-width: 800px) {
+    .top-content {
+        margin-bottom: 20px;
+        padding-bottom: 30px;
+        width: 100%;
+    }
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+}
+
+.innovation-and-button {
+    margin: 100px 80px 60px 0px;
+}
+
+@media (max-width: 800px) {
+    .innovation-and-button {
+        margin: 100px 80px 60px 60px;
+    }
+}
+
+button {
+    border: 1px solid black;
+    width: 200px;
+    height: 35px;
+    font-size: 15px;
+    margin: 10px 0 0 90px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+.top-paragraphs {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.features .about {
+    width: 400px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+/* Middle content CSS for index.html */
+
+.middle-content {
+    margin-bottom: 30px;
+    border-bottom: 2px solid black;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+    .features {
+        width: 100%;
+    }
+
+    .about {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .top-paragraphs {
+        display: block;
+    }
+
+    .features {
+        width: 100%;
+        margin: 40px 50px 40px 10px;
+    }
+
+    .about {
+        width: 100%;
+        margin: 40px 50px 40px 10px;
+    }
+}
+
+.middle-img {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+    .middle-img img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .middle-img img {
+        width: 100%;
+        margin: 0 10px 
+    }
+}
+
+/* Bottom content CSS for index.html */
+
+.bottom-paragraphs {
+    width: 875px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+@media (max-width: 800px) {
+    .bottom-paragraphs {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .bottom-paragraphs {
+        display: block;
+        width: 100%;
+    }
+}
+
+.services .product .vision {
+    width: 250px;
+}
+
+@media (max-width: 500px) {
+    .services {
+        width: 100%;
+        margin: 40px 50px 40px 10px;
+    }
+
+    .product {
+        width: 100%;
+        margin: 40px 50px 40px 10px;
+    }
+
+    .vision {
+        width: 100%;
+        margin: 40px 50px 40px 10px;
+    }
+}
+
+.bottom-content {
+    margin-top: 30px;
+}
+
+@media (max-width: 500px) {
+    .bottom-content {
+        width: 100%;
+        margin: 40px 50px 40px 10px;
+    }
+}
+
+/* Footer content CSS for index.html */
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 500px) {
+    footer {
+        width: 100%;
+        margin: 0px 50px 40px 10px;
+    }
+}
