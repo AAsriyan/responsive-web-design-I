@@ -91,7 +91,7 @@ nav a {
         text-align: center;
         position: relative;
         top: 10px;
-        order: 2;
+        left: 0;
     }
 
     nav {
@@ -100,11 +100,14 @@ nav a {
         max-width: 100%;
         align-items: center;
         position: relative;
-        order: 0;
     }
 
     header {
-        display: block;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+        height: 80px;
+
     }
 
     h1 {
@@ -125,13 +128,15 @@ nav a {
     nav {
         display: block;
         width: 100%;
-        order: 0;
     }
 
     header {
         align-items: center;
-        display: block;
+        display: flex;
         width: 100%;
+        margin-bottom: 0;
+        height: 450px;
+
     }
 
     nav a {
@@ -145,11 +150,14 @@ nav a {
     }
 
     .logo {
+        width: 100%;
+        margin-bottom: 10px;
         height: 50px;
         border-bottom: 1px solid gray;
-        order: 1;
     }
 }
+
+/* Top content CSS for index.html */
 
 .top-content {
     display: flex;
@@ -221,6 +229,8 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* Middle content CSS for index.html */
+
 .middle-content {
     margin-bottom: 30px;
     border-bottom: 2px solid black;
@@ -270,6 +280,7 @@ h2 {
     }
 }
 
+/* Bottom content CSS for index.html */
 
 .bottom-paragraphs {
     width: 875px;
@@ -322,6 +333,8 @@ h2 {
         margin: 40px 50px 40px 10px;
     }
 }
+
+/* Footer content CSS for index.html */
 
 footer {
     display: flex;
