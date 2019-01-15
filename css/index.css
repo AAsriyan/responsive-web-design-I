@@ -63,29 +63,6 @@ header {
     margin-bottom: 50px;
 }
 
-/* @media (max-width: 1024px) {
-    header {
-        display: flex;
-        justify-content: space-evenly;
-    }
-} 
-
-@media (max-width: 800px) {
-    header {
-        display: flex;
-        justify-content: 
-    }
-}
-
-@media (max-width: 500px) {
-    header {
-        display: flex;
-        justify-content: 
-    }
-}
-
-*/
-
 nav {
     display: flex;
     justify-content: space-around;
@@ -114,7 +91,7 @@ nav a {
         text-align: center;
         position: relative;
         top: 10px;
-        left: 0;
+        order: 2;
     }
 
     nav {
@@ -123,13 +100,11 @@ nav a {
         max-width: 100%;
         align-items: center;
         position: relative;
-        top: 100px;
-        left: 0;
+        order: 0;
     }
 
     header {
         display: block;
-        margin: 0 auto;
     }
 
     h1 {
@@ -149,10 +124,14 @@ nav a {
 
     nav {
         display: block;
+        width: 100%;
+        order: 0;
     }
 
     header {
-        max-width: 100%;
+        align-items: center;
+        display: block;
+        width: 100%;
     }
 
     nav a {
@@ -166,7 +145,9 @@ nav a {
     }
 
     .logo {
-        align-self: 
+        height: 50px;
+        border-bottom: 1px solid gray;
+        order: 1;
     }
 }
 
